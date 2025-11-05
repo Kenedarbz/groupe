@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Le Graal du Code</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="contact">
+
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="#Contact">Contact</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Ouvrir le menu">
+      <label for="menu-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="Apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="legraalducode.html">Accueil</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="contact-box">
+      <h2>Entrer en contact avec le Graal du Code</h2>
+      <p>Une quête à nous confier ? Un bug digne d’une légende ?</p>
+      <p>Laissez-nous un message, et notre Table Ronde du code vous répondra plus vite qu’un Perceval devant un mystère.</p>
+
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Votre nom :</label>
+        <input type="text" id="name" name="name" placeholder="Ex : Ali le Courageux" required>
+
+        <label for="email">Votre e-mail :</label>
+        <input type="email" id="email" name="email" placeholder="Ex : Priscilla@graalducode.fr" required>
+
+        <label for="destinataire">À qui souhaitez-vous adresser votre missive ?</label>
+        <select id="destinataire" name="destinataire" required>
+          <option value="">-- Choisissez votre chevalier du code --</option>
+          <option value="priscilla">Priscilla – Maîtresse des Interfaces</option>
+          <option value="ali">Ali – Forgeron des Algorithmes</option>
+          <option value="romain">Romain – Gardien des Serveurs</option>
+        </select>
+
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" rows="5" placeholder="Racontez-nous votre quête... ou pas."></textarea>
+
+        <button type="submit">Envoyer la missive</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
